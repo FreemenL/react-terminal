@@ -1,0 +1,63 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "input": "babel src --out-dir lib && node lib/input.js",
+    "spinner": "babel src --out-dir lib && node lib/spinner.js",
+    "select": "babel src --out-dir lib && node lib/select.js",
+    "link": "babel src --out-dir lib && node lib/link.js",
+    "box": "babel src --out-dir lib && node lib/box.js",
+    "gradient": "babel src --out-dir lib && node lib/gradient.js",
+    "img": "babel src --out-dir lib && node lib/img.js",
+    "line": "babel src --out-dir lib && node lib/line.js",
+    "color": "babel src --out-dir lib && node lib/color.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "Firefox ESR",
+              "> 1%",
+              "ie >= 8",
+              "iOS >= 8",
+              "Android >= 4"
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel": "^6.23.0",
+    "import-jsx": "^2.0.0",
+    "ink": "^2.2.0",
+    "ink-big-text": "^1.0.1",
+    "ink-box": "^1.0.0",
+    "ink-color-pipe": "^0.2.0",
+    "ink-divider": "^2.0.0",
+    "ink-gradient": "^1.0.0",
+    "ink-image": "^2.0.0",
+    "ink-link": "^1.0.0",
+    "ink-select-input": "^3.1.1",
+    "ink-spinner": "^3.0.1",
+    "ink-text-input": "^3.2.0",
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  }
+}
